@@ -5,6 +5,8 @@
 <header class="top"><div class="brand"><b>TRUST-DOE · Process Development Workbench</b><small>Sequential experimentation · model evidence · robust recipe qualification</small></div><div><span class="badge">SHADOW ONLY</span><span class="badge">MACHINE WRITE BLOCKED</span></div></header>
 <div class="shell"><nav><div id="nav"></div><div class="campaignBox"><div class="k">Active campaign</div><select id="campaignSel"></select><button class="action" style="width:100%;margin-top:6px" onclick="createCampaign()">+ New campaign</button></div></nav><main id="main">Loading…</main></div>
 <script>
+window.__TRUSTDOE_API_BASE__=(window.__TRUSTDOE_API_BASE__||'https://trust-doe-api.onrender.com').replace(/\/$/,'');
+const _trustFetch=window.fetch.bind(window);window.fetch=(input,init)=>{const url=typeof input==='string'?input:input.url;return url.startsWith('/api/')?_trustFetch(window.__TRUSTDOE_API_BASE__+url,init):_trustFetch(input,init)};
 const spaces=['Experiment Design Studio','Model Laboratory','Autonomous Experiment Studio','Operating Window Explorer','Recipe Forge','Qualification Gate','Scenario Laboratory','Campaign Ledger','Data Gateway'];let R,campaigns=[],cid='DEMO-2026-001',active=0;
 const fmt=x=>typeof x==='number'?(Math.abs(x)>=100?x.toFixed(1):x.toFixed(4)):x;const api=(u,o)=>fetch(u,{headers:{'Content-Type':'application/json'},...o}).then(async r=>{let j=await r.json();if(!r.ok)throw Error(j.error||r.statusText);return j});
 function nav(){navEl.innerHTML=spaces.map((s,i)=>`<button class="${i===active?'active':''}" onclick="show(${i})">${String(i+1).padStart(2,'0')} · ${s}</button>`).join('')}

@@ -26,6 +26,9 @@ class Handler(SimpleHTTPRequestHandler):
         self.request_id=request_id
         self.send_header('X-Request-ID',request_id)
         self.send_header('X-Process-Recipe-Execution','SHADOW_ONLY')
+        self.send_header('Access-Control-Allow-Origin',os.getenv('TRUSTDOE_CORS_ORIGIN','*'))
+        self.send_header('Access-Control-Allow-Methods','GET,POST,OPTIONS')
+        self.send_header('Access-Control-Allow-Headers','Content-Type,X-Request-ID')
         super().end_headers()
     def translate_path(self,path):
         rel=urlparse(path).path.lstrip('/') or 'index.html'
@@ -36,6 +39,8 @@ class Handler(SimpleHTTPRequestHandler):
     def _body(self):
         n=int(self.headers.get('Content-Length','0') or 0)
         return json.loads(self.rfile.read(n).decode('utf-8')) if n else {}
+    def do_OPTIONS(self):
+        self.send_response(204); self.send_header('Content-Length','0'); self.end_headers()
     def do_GET(self):
         p=urlparse(self.path).path
         if p=='/api/health': return self._json({'status':'ok','product':'TRUST-DOE','version':'1.0.0','machine_write':'BLOCKED'})
@@ -74,7 +79,8 @@ class Handler(SimpleHTTPRequestHandler):
     def log_message(self,fmt,*args): print('[TRUST-DOE]',fmt%args)
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser(); ap.add_argument('--port',type=int,default=int(os.getenv('PPO_PORT','8772'))); args=ap.parse_args()
-    print(f'TRUST-DOE Process Development Platform v1.0.0 -> http://127.0.0.1:{args.port}')
+    ap=argparse.ArgumentParser(); ap.add_argument('--port',type=int,default=int(os.getenv('PORT',os.getenv('PPO_PORT','8772')))); args=ap.parse_args()
+    host=os.getenv('HOST','0.0.0.0')
+    print(f'TRUST-DOE Process Development Platform v1.0.0 -> http://{host}:{args.port}')
     print('Machine write: BLOCKED | Default evidence: SYNTHETIC_VALIDATION')
-    ThreadingHTTPServer(('127.0.0.1',args.port),Handler).serve_forever()
+    ThreadingHTTPServer((host,args.port),Handler).serve_forever()

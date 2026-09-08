@@ -28,6 +28,14 @@ The first command validates prediction → decision → counterfactual → OR es
 
 # TRUST-DOE — Autonomous Process Parameter Optimization
 
+## Deployment
+
+Deploy the repository root to Vercel using `vercel.json`; it serves the real
+`workbench/` experiment lab as a static frontend. Deploy the same repository
+as a Render Blueprint, where `scripts/start_platform.py` binds to `$PORT` and
+exposes `/api/health`. The workbench routes all `/api/*` calls to the Render
+service through a configurable browser bridge; machine write remains blocked.
+
 **Phase D v0.95.0 — Process Development Platform**
 
 TRUST-DOE is a safe sequential experimentation and robust process-recipe decision system. It is designed around a different operational question from predictive-maintenance, digital-twin, circular-manufacturing, and continuous-improvement applications:
