@@ -3,13 +3,20 @@ from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import urlparse
 import argparse, json, os, uuid
+
+ROOT=Path(__file__).resolve().parents[1]
+SOURCE_ROOT=ROOT/'src'
+import sys
+if str(SOURCE_ROOT) not in sys.path:
+    sys.path.insert(0,str(SOURCE_ROOT))
+
 from trustdoe.persistence import CampaignRepository
 from trustdoe.workflow import WorkflowService
 from trustdoe.signature_algorithm import select_recipe as signature_select, ablation as signature_ablation, sensitivity as signature_sensitivity
 
-ROOT=Path(__file__).resolve().parents[1]
 WORKBENCH=ROOT/'workbench'
-DB=ROOT/'runtime'/'trustdoe.db'
+DEFAULT_DB=Path('/tmp/trustdoe.db') if os.getenv('VERCEL') else ROOT/'runtime'/'trustdoe.db'
+DB=Path(os.getenv('TRUSTDOE_DB_PATH',str(DEFAULT_DB)))
 SERVICE=WorkflowService(DB)
 REPO=CampaignRepository(DB)
 
