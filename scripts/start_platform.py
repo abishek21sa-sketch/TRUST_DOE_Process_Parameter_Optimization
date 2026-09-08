@@ -15,7 +15,8 @@ from trustdoe.workflow import WorkflowService
 from trustdoe.signature_algorithm import select_recipe as signature_select, ablation as signature_ablation, sensitivity as signature_sensitivity
 
 WORKBENCH=ROOT/'workbench'
-DB=ROOT/'runtime'/'trustdoe.db'
+DEFAULT_DB=Path('/tmp/trustdoe.db') if os.getenv('VERCEL') else ROOT/'runtime'/'trustdoe.db'
+DB=Path(os.getenv('TRUSTDOE_DB_PATH',str(DEFAULT_DB)))
 SERVICE=WorkflowService(DB)
 REPO=CampaignRepository(DB)
 
