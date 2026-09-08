@@ -1,0 +1,16 @@
+{
+  "project": "TRUST-DOE Process Parameter Optimization",
+  "source_provider": "NIST/SEMATECH e-Handbook",
+  "source_name": "CVD tungsten deposition response-surface experiment",
+  "source_url": "https://www.itl.nist.gov/div898/handbook/pri/section4/pri473.htm",
+  "download_url": "https://www.itl.nist.gov/div898/handbook/datasets/IMPROVE-5_4_7_3.DAT",
+  "doi": "NIST e-Handbook example; Czitrom & Spagon (1997)",
+  "license": "NIST-hosted educational example; see source terms",
+  "advertised": "11-run published CCI subset with Pressure, H2/WF6, Uniformity and Stress",
+  "entity": "experiment / recipe / response",
+  "historical": "campaign run order, response curvature and qualification history",
+  "case": "CVD tungsten deposition operating-window study",
+  "refresh_required_for_real_data": false,
+  "offline_validation_mode": "repository reference evidence + source contract",
+  "provenance_rule": "Never label reference/synthetic fixtures as external observations."
+}

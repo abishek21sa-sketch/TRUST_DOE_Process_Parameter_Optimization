@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "runtime_ms": 15.748,
+  "project": "TRUST-DOE",
+  "ml_family": "Gaussian-process surrogate learning",
+  "original_algorithm": "SAFE-TRUST-v1",
+  "workspace_count": 33,
+  "human_authority": "PROCESS_DEVELOPMENT_ENGINEER",
+  "autonomous_execution": false,
+  "decision": {
+    "index": 132,
+    "x": [
+      0.8,
+      0.2
+    ],
+    "safety_lcb": 0.04224230751535635,
+    "score": 0.034002795313513745,
+    "expected_improvement": 0.0,
+    "information": 0.18176815513344785,
+    "feasible": true
+  },
+  "counterfactual": {
+    "naive_policy": "maximum expected improvement without safety confidence",
+    "index": 116,
+    "safety_lcb": 0.3742228965250279,
+    "disagrees": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "certificate_sha256": "17e997be224a49284f6090f074335dcf44b972679a941bb519082be0446bb34d",
+  "checks": {
+    "certificate_integrity_valid": true,
+    "out_of_bounds_recipe_rejected": true,
+    "production_write_blocked": true,
+    "reference_runtime_under_30s": true,
+    "tampering_detected": true
+  },
+  "claim_boundary": "Synthetic process-development operability evidence only; production recipe write remains blocked.",
+  "decision_state": "ENGINEERING_REVIEW_REQUIRED",
+  "phase": "ENTERPRISE_OPERABILITY_V1",
+  "runtime_seconds": 0.2185142010000618,
+  "status": "PASS"
+}

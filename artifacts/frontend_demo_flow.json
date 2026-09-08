@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "project": "TRUST-DOE — Process Parameter Optimization",
+  "visual_identity": "process-development laboratory notebook / response surface",
+  "native_entrypoint": "workbench/index.html",
+  "shared_behavioral_contract": [
+    "input",
+    "evidence",
+    "decision",
+    "counterfactual",
+    "human approval"
+  ],
+  "project_specific_flow": [
+    "construct DOE",
+    "fit response and safety models",
+    "explore operating window",
+    "select trust-region experiment",
+    "process engineer qualifies or holds"
+  ],
+  "not_shared": [
+    "theme",
+    "layout",
+    "domain vocabulary",
+    "visualization type"
+  ],
+  "signature_endpoint": "/api/governance/signature"
+}

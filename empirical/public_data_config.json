@@ -1,0 +1,24 @@
+{
+  "ptype": "trust",
+  "title": "TRUST-DOE \u2014 Process Parameter Optimization",
+  "dataset": "NIST CVD response-surface experiment",
+  "uci_id": null,
+  "raw_dir": "nist_cvd",
+  "primary_files": [
+    "nist_cvd_response_surface.csv"
+  ],
+  "static": [
+    [
+      "public_experiments/nist_cvd_response_surface.csv",
+      "data/raw/nist_cvd/nist_cvd_response_surface.csv"
+    ]
+  ],
+  "algorithm": "SAFE-TRUST-v1",
+  "case": "Published NIST CVD Operating-Window Reconstruction",
+  "authority": "PROCESS_DEVELOPMENT_ENGINEER",
+  "claim": "Published NIST process-development evidence; not an experiment run by this repository or a private plant.",
+  "static_files": [
+    "data/raw/nist_cvd/nist_cvd_response_surface.csv"
+  ],
+  "model_version": "public-data-backbone-1.0"
+}

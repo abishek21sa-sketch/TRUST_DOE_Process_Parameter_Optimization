@@ -1,0 +1,27 @@
+{
+  "dataset": "NIST CVD response-surface experiment",
+  "case_study": "Published NIST CVD Operating-Window Reconstruction",
+  "raw_directory": "data/raw/nist_cvd",
+  "required_primary_files": [
+    "nist_cvd_response_surface.csv"
+  ],
+  "schema_policy": {
+    "numeric_missing_values": "allowed but must be profiled/imputed inside train-only pipeline",
+    "empty_file": "reject",
+    "hash": "SHA-256",
+    "source_mode": "explicit"
+  },
+  "decision_chain": [
+    "real observed data",
+    "derived diagnostics",
+    "predictive model",
+    "repository-authored original algorithm",
+    "OR/simulation escalation",
+    "analytical AI challenge",
+    "human approval/HOLD"
+  ],
+  "original_algorithm": "SAFE-TRUST-v1",
+  "claim_boundary": "Published NIST process-development evidence; not an experiment run by this repository or a private plant.",
+  "human_authority": "PROCESS_DEVELOPMENT_ENGINEER",
+  "autonomous_execution": false
+}

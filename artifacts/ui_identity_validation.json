@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "project": "TRUST-DOE \u2014 Process Parameter Optimization",
+  "ui_identity": "process-development laboratory notebook / response surface",
+  "ui_namespace": "lab-",
+  "workspaces": 33,
+  "checks": {
+    "signature_marker": true,
+    "namespace_depth": true,
+    "workspace_depth": true,
+    "workspace_count_matches": true,
+    "ml_lifecycle_visible": true,
+    "agent_planning_visible": true,
+    "empirical_provenance_visible": true
+  }
+}

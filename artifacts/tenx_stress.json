@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "seeds": [
+    3,
+    7,
+    11,
+    19,
+    29
+  ],
+  "decision_path_passes": 5,
+  "naive_decision_changes": 4,
+  "rows": [
+    {
+      "seed": 3,
+      "pass": true,
+      "changes_naive_decision": true,
+      "decision": {
+        "index": 135,
+        "x": [
+          0.8,
+          0.35000000000000003
+        ],
+        "safety_lcb": 0.1630314668641794,
+        "score": 0.07473110809917703,
+        "expected_improvement": 0.028501205962841433,
+        "information": 0.2110670889502319,
+        "feasible": true
+      }
+    },
+    {
+      "seed": 7,
+      "pass": true,
+      "changes_naive_decision": true,
+      "decision": {
+        "index": 132,
+        "x": [
+          0.8,
+          0.2
+        ],
+        "safety_lcb": 0.04224230751535635,
+        "score": 0.034002795313513745,
+        "expected_improvement": 0.0,
+        "information": 0.18176815513344785,
+        "feasible": true
+      }
+    },
+    {
+      "seed": 11,
+      "pass": true,
+      "changes_naive_decision": true,
+      "decision": {
+        "index": 119,
+        "x": [
+          0.7,
+          0.75
+        ],
+        "safety_lcb": 0.06624729476800661,
+        "score": 0.16280041642503015,
+        "expected_improvement": 0.0,
+        "information": 0.44522464461775074,
+        "feasible": true
+      }
+    },
+    {
+      "seed": 19,
+      "pass": true,
+      "changes_naive_decision": false,
+      "decision": {
+        "index": 142,
+        "x": [
+          0.8,
+          0.7
+        ],
+        "safety_lcb": 0.4652651119092974,
+        "score": 0.8535370733857875,
+        "expected_improvement": 0.8255639550826371,
+        "information": 0.20548051782732285,
+        "feasible": true
+      }
+    },
+    {
+      "seed": 29,
+      "pass": true,
+      "changes_naive_decision": true,
+      "decision": {
+        "index": 23,
+        "x": [
+          0.3,
+          0.75
+        ],
+        "safety_lcb": 0.27328781708247096,
+        "score": 0.03973122174389823,
+        "expected_improvement": 0.0,
+        "information": 0.18973308987184048,
+        "feasible": true
+      }
+    }
+  ]
+}

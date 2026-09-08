@@ -1,0 +1,71 @@
+{
+  "autonomous_execution": false,
+  "case_study": {
+    "algorithm": "SAFE-TRUST-v1",
+    "decision_impact": "Published NIST observations directly fit the GP posterior and determine the conservative next-experiment recommendation.",
+    "gp_leave_one_out_rmse": 4.596853574003127,
+    "naive_min_uniformity_candidate": {
+      "h2_wf6_ratio": 2.0,
+      "pressure_torr": 80.0,
+      "stress_ucb95": 4.547290427092982
+    },
+    "name": "Published NIST CVD Operating-Window Reconstruction",
+    "observed_runs": 11,
+    "profile": {
+      "bytes": 368,
+      "features": 7,
+      "missing_fraction": 0.0,
+      "path": "data/raw/nist_cvd/nist_cvd_response_surface.csv",
+      "rows": 11,
+      "sha256": "45ace9c7a16e7fbfd4fc82542bb8491e33a3777fe2009c5e68befb90f0ef4b20"
+    },
+    "quadratic_leave_one_out_rmse": 1.0940018209710636,
+    "safe_operating_grid_fraction": 0.8657648283038502,
+    "safe_trust_next_experiment": {
+      "conservative_feasible": true,
+      "h2_wf6_ratio": 2.0,
+      "pred_stress": 3.080951841561176,
+      "pred_uniformity_pct": 1.2992191742719612,
+      "pressure_torr": 80.0,
+      "stress_ucb95": 4.547290427092982,
+      "uniformity_sd": 0.8913912374053526
+    },
+    "status": "ACTIVE"
+  },
+  "claim_boundary": "Published NIST process-development evidence; not an experiment run by this repository or a private plant.",
+  "current_model_version": "public-data-backbone-1.0",
+  "dataset": "NIST CVD response-surface experiment",
+  "dataset_state": "PUBLISHED_EXTERNAL_ACTIVE",
+  "generated_at_utc": "2026-09-06T16:57:15.262741+00:00",
+  "human_authority": "PROCESS_DEVELOPMENT_ENGINEER",
+  "layers": {
+    "contracts": "data/contracts",
+    "dictionaries": "data/dictionaries",
+    "processed": "data/processed",
+    "provenance": "data/provenance",
+    "raw": "data/raw",
+    "snapshots": "data/snapshots"
+  },
+  "primary_files": [
+    {
+      "bytes": 368,
+      "features": 7,
+      "missing_fraction": 0.0,
+      "path": "data/raw/nist_cvd/nist_cvd_response_surface.csv",
+      "rows": 11,
+      "sha256": "45ace9c7a16e7fbfd4fc82542bb8491e33a3777fe2009c5e68befb90f0ef4b20"
+    }
+  ],
+  "project": "TRUST-DOE \u2014 Process Parameter Optimization",
+  "schema_validation": "PASS",
+  "static_context_files": [
+    {
+      "bytes": 368,
+      "features": 7,
+      "missing_fraction": 0.0,
+      "path": "data/raw/nist_cvd/nist_cvd_response_surface.csv",
+      "rows": 11,
+      "sha256": "45ace9c7a16e7fbfd4fc82542bb8491e33a3777fe2009c5e68befb90f0ef4b20"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "local_evidence": "data/external/nist_cvd_cci.csv",
+  "entity_grain": "experiment / recipe / response",
+  "historical_intelligence": "campaign run order, response curvature and qualification history",
+  "decision": "next experiment / qualified process recipe",
+  "actor": "Process Development Engineer",
+  "case_questions": [
+    "Which experiment / recipe / response shows the strongest empirical shift or evidence concentration?",
+    "Does the predictive + authored-algorithm + OR decision differ from the simple baseline for next experiment / qualified process recipe?",
+    "What evidence would cause the Process Development Engineer to HOLD rather than approve?"
+  ]
+}

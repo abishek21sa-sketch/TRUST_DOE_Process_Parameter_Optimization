@@ -1,0 +1,87 @@
+{
+  "project": "TRUST-DOE — Process Parameter Optimization",
+  "release_stage": "PORTFOLIO_PUBLIC_DATA_RELEASE_CANDIDATE",
+  "platform": "Windows-first",
+  "workspaces": 32,
+  "original_algorithm": "SAFE-TRUST-v1",
+  "predictive_ml_family": "Gaussian-process surrogate learning",
+  "decision_campaign": "Sequential Experiment Campaign",
+  "campaign_identity": "safe-recipe dispersion + information frontier",
+  "data_mode": "published_external_snapshot",
+  "empirical_promotion": "EXTERNAL_EVIDENCE_ACTIVE",
+  "human_authority": "PROCESS_DEVELOPMENT_ENGINEER",
+  "autonomous_execution": false,
+  "evidence_inventory": [
+    {
+      "path": "artifacts/tenx_validation.json",
+      "sha256": "089346869929996e869056b58c4ec2c57482ba846f61d7991ad7285906023fb3"
+    },
+    {
+      "path": "artifacts/tenx_stress.json",
+      "sha256": "52ab4492348a01bbad5eccf233235293af227dce10f9656d94fb95fc4da8748c"
+    },
+    {
+      "path": "artifacts/airlines15x_validation.json",
+      "sha256": "b0e438072abcedd761fd2cb4ff43ca506d489b95530ec21ecbaf62e625bd8eb9"
+    },
+    {
+      "path": "artifacts/final_depth_validation.json",
+      "sha256": "436e04c489d7d8b9c24e8f9fbe5153b66a360c315a9901eafeef0bad73820b36"
+    },
+    {
+      "path": "artifacts/intelligence_validation.json",
+      "sha256": "60a8100248764815d59edb53beb16ae0d26c6ff816898a1a426188514ff612ef"
+    },
+    {
+      "path": "artifacts/ui_identity_validation.json",
+      "sha256": "450d11f6a42d8db8f48f0b891836b8ca5e196ca83246d89c3ea645085b40e91c"
+    },
+    {
+      "path": "artifacts/frontend_diversity.json",
+      "sha256": "700d77fc065fd1fbae0aeb2cf237dcf38f13485937f4b35a21713373b4440dac"
+    },
+    {
+      "path": "artifacts/portfolio_validation.json",
+      "sha256": "bf32dbe356489096df9e118b7fc1a236ecd7226b6db5b5bbd9d16203258614ed"
+    },
+    {
+      "path": "artifacts/governance_standard_validation.json",
+      "sha256": "465ef9d2651fa68e8dde44fdef472fa0d8851b49e3d750037a08e986516fa08e"
+    },
+    {
+      "path": "PROJECT_METADATA.json",
+      "sha256": "ee7e270e7e6875678867edbbba2bdd5d82e973c9b66ee3a879f8cc6d989b87c2"
+    },
+    {
+      "path": "docs/FRONTEND_DEMO_FLOW.md",
+      "sha256": "03e127a221b462f553999e4f49727607a5825cd827f81d2621471f856333ba5a"
+    },
+    {
+      "path": "artifacts/fortune50_capability_benchmark.json",
+      "sha256": "dab3e4f794fdb7658cb2b53dea3c0d9e1ba0d76b977f26bd310147dcb3834ae6"
+    },
+    {
+      "path": "artifacts/enterprise_hardening.json",
+      "sha256": "13823479dc7ac4283594d27f22827cdc5b0f00d4e509441df9ceba6eded43a78"
+    },
+    {
+      "path": "artifacts/frontend_demo_flow.json",
+      "sha256": "836f5f2e6d86f13f97be88dc03ea3c4344efac817afc74b2f39dda6b7f7d714b"
+    },
+    {
+      "path": "scripts/start_platform.py",
+      "sha256": "315121ad211872752c6bdbdc31f0a531d7159a2b1ebbe9d4a214232c591b0c5a"
+    }
+  ],
+  "claim_boundary": "Portfolio-grade analytical validation. External/domain validation and native dependency acceptance remain required where explicitly marked; autonomous operational execution is disabled.",
+  "product_ui_identity": "process-development laboratory notebook / response surface",
+  "ai_agent": "Process Development Scientist",
+  "agent_decision_policy": "posterior-driven experiment selection and qualification",
+  "ml_lifecycle_endpoint": "/api/ml/lifecycle",
+  "agent_endpoint": "/api/agent/run",
+  "frontend_similarity_method": "5-token Jaccard after removing embedded workspace contract payload",
+  "max_pairwise_frontend_similarity": 0.1321,
+  "frontend_similarity_threshold": 0.2,
+  "data_backbone": "structured public data contracts + provenance + claim ledger + project-specific empirical case",
+  "claim_ledger": "data/provenance/CLAIM_LEDGER.md"
+}

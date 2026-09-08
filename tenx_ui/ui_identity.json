@@ -1,0 +1,8 @@
+{
+  "project": "TRUST-DOE \u2014 Process Parameter Optimization",
+  "ui_namespace": "lab-",
+  "signature_marker": "TRUST-DOE / PROCESS SCIENCE",
+  "workspace_count": 33,
+  "max_allowed_pairwise_similarity": 0.2,
+  "product_identity": "process-development laboratory notebook / response surface"
+}

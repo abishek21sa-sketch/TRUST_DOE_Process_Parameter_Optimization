@@ -1,0 +1,13 @@
+[
+  {
+    "project": "TRUST-DOE",
+    "company_context": "industrial semiconductor CVD process",
+    "primary_dataset": "NIST CVD response-surface experiment",
+    "dataset_id": null,
+    "instances": 11,
+    "features": 4,
+    "license": "NIST handbook page / published case-study data; preserve attribution",
+    "company_public_file": "public_experiments/nist_cvd_response_surface.csv",
+    "intended_use": "Response-surface reconstruction, Gaussian-process comparison, safe DOE, robust operating-window and SAFE-TRUST experiments."
+  }
+]

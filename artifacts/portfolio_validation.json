@@ -1,0 +1,191 @@
+{
+  "evidence_boundary": "Synthetic additive-manufacturing benchmark; no plant-performance or production-control claim.",
+  "evidence_hash": "8a686ef51e8dec04f919d349513510ab3229ce589ac084538453826d32d18c19",
+  "generated_at_utc": "2026-09-06T16:59:27.661842+00:00",
+  "perturbation_stress": {
+    "expected_objective": 0.028967551599964565,
+    "feasibility_probability": 1.0,
+    "objective_p95": 0.032091668077141415,
+    "samples": 1000
+  },
+  "qualification": {
+    "production_write_allowed": false,
+    "reasons": [],
+    "required_human_action": "Review evidence and authorize a governed shadow trial; production machine write remains blocked.",
+    "state": "SHADOW_TRIAL_READY"
+  },
+  "race_budget": 4,
+  "release": "TRUST-DOE_PORTFOLIO_RC1",
+  "robust_recipe": {
+    "expected_objective": 0.03085464957194271,
+    "feasibility_probability": 1.0,
+    "p95_objective": 0.0349008934334632,
+    "recipe": [
+      242.97196831850113,
+      977.1001418554093,
+      0.10737923143688509,
+      0.03785059073178508
+    ],
+    "status": "ROBUST_FEASIBLE",
+    "worst_safety_margin": 0.9775517612859909
+  },
+  "seed": 2026,
+  "strategy_race": [
+    {
+      "final_best_safe_objective": 0.1694708731250868,
+      "final_information_logdet": 6.018223852588637,
+      "points": [
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": -16.419536771870625,
+          "trial": 0,
+          "unsafe_trials": 0
+        },
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": 0.7996644867448253,
+          "trial": 1,
+          "unsafe_trials": 0
+        },
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": 3.905638881820295,
+          "trial": 2,
+          "unsafe_trials": 0
+        },
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": 5.385396943722129,
+          "trial": 3,
+          "unsafe_trials": 0
+        },
+        {
+          "best_safe_objective": 0.1694708731250868,
+          "information_logdet": 6.018223852588637,
+          "trial": 4,
+          "unsafe_trials": 0
+        }
+      ],
+      "production_write_allowed": false,
+      "strategy": "TRUST-DOE-S",
+      "unsafe_trials": 0
+    },
+    {
+      "final_best_safe_objective": 0.3894476744995222,
+      "final_information_logdet": 4.026167292401878,
+      "points": [
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": -16.419536771870625,
+          "trial": 0,
+          "unsafe_trials": 0
+        },
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": -9.946406545437897,
+          "trial": 1,
+          "unsafe_trials": 0
+        },
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": -0.5975420816119574,
+          "trial": 2,
+          "unsafe_trials": 0
+        },
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": 1.3791510998860534,
+          "trial": 3,
+          "unsafe_trials": 0
+        },
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": 4.026167292401878,
+          "trial": 4,
+          "unsafe_trials": 0
+        }
+      ],
+      "production_write_allowed": false,
+      "strategy": "RANDOM-LHS",
+      "unsafe_trials": 0
+    },
+    {
+      "final_best_safe_objective": 0.3894476744995222,
+      "final_information_logdet": 13.538907406178676,
+      "points": [
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": -16.419536771870625,
+          "trial": 0,
+          "unsafe_trials": 0
+        },
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": 0.6178115586848416,
+          "trial": 1,
+          "unsafe_trials": 1
+        },
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": 3.805118603041717,
+          "trial": 2,
+          "unsafe_trials": 2
+        },
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": 9.131732292703136,
+          "trial": 3,
+          "unsafe_trials": 3
+        },
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": 13.538907406178676,
+          "trial": 4,
+          "unsafe_trials": 4
+        }
+      ],
+      "production_write_allowed": false,
+      "strategy": "STATIC-DOE",
+      "unsafe_trials": 4
+    },
+    {
+      "final_best_safe_objective": 0.14662260319867604,
+      "final_information_logdet": 3.8171880845546946,
+      "points": [
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": -16.419536771870625,
+          "trial": 0,
+          "unsafe_trials": 0
+        },
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": -3.090930405143331,
+          "trial": 1,
+          "unsafe_trials": 0
+        },
+        {
+          "best_safe_objective": 0.3894476744995222,
+          "information_logdet": 0.1095019796866632,
+          "trial": 2,
+          "unsafe_trials": 0
+        },
+        {
+          "best_safe_objective": 0.18963438584986622,
+          "information_logdet": 2.716974354211289,
+          "trial": 3,
+          "unsafe_trials": 0
+        },
+        {
+          "best_safe_objective": 0.14662260319867604,
+          "information_logdet": 3.8171880845546946,
+          "trial": 4,
+          "unsafe_trials": 0
+        }
+      ],
+      "production_write_allowed": false,
+      "strategy": "UNCONSTRAINED-BO",
+      "unsafe_trials": 0
+    }
+  ]
+}
