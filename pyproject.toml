@@ -30,3 +30,6 @@ where = ["src"]
 testpaths = ["tests"]
 addopts = "-q -m 'not slow'"
 markers = ["slow: expensive legacy evidence regeneration executed by dedicated validators"]
+
+[tool.vercel]
+entrypoint = "scripts.start_platform:Handler"
