@@ -11,3 +11,5 @@ services:
         value: 3.11.9
       - key: TRUSTDOE_CORS_ORIGIN
         value: "*"
+      - key: GEMINI_API_KEY
+        sync: false

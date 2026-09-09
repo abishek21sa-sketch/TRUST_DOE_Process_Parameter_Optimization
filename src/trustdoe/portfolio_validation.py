@@ -43,7 +43,7 @@ def build_portfolio_certificate(*, seed: int = 2026, race_budget: int = 4) -> di
 
     state = "SHADOW_TRIAL_READY" if not qualification_reasons else "HOLD"
     core = {
-        "release": "TRUST-DOE_PORTFOLIO_RC1",
+        "release": "TRUST-DOE_PORTFOLIO_RELEASE",
         "evidence_boundary": "Synthetic additive-manufacturing benchmark; no plant-performance or production-control claim.",
         "seed": seed,
         "race_budget": race_budget,

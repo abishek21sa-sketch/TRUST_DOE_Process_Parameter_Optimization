@@ -9,10 +9,13 @@ SOURCE_ROOT=ROOT/'src'
 import sys
 if str(SOURCE_ROOT) not in sys.path:
     sys.path.insert(0,str(SOURCE_ROOT))
+if str(ROOT) not in sys.path:
+    sys.path.insert(0,str(ROOT))
 
 from trustdoe.persistence import CampaignRepository
 from trustdoe.workflow import WorkflowService
 from trustdoe.signature_algorithm import select_recipe as signature_select, ablation as signature_ablation, sensitivity as signature_sensitivity
+from intelligence.copilot import build_response as build_copilot_response, status as copilot_status
 
 WORKBENCH=ROOT/'workbench'
 DEFAULT_DB=Path('/tmp/trustdoe.db') if os.getenv('VERCEL') else ROOT/'runtime'/'trustdoe.db'
@@ -44,6 +47,7 @@ class Handler(SimpleHTTPRequestHandler):
     def do_GET(self):
         p=urlparse(self.path).path
         if p=='/api/health': return self._json({'status':'ok','product':'TRUST-DOE','version':'1.0.0','machine_write':'BLOCKED'})
+        if p=='/api/copilot/status': return self._json(copilot_status())
         if p=='/api/governance/signature':
             candidates=[{'recipe':[0.0,0.0],'objective':0.4,'safety':.95,'information':.05},{'recipe':[2.0,2.0],'objective':.1,'safety':.96,'information':.2}]
             return self._json({'status':'HUMAN_GATED_REFERENCE','signature_algorithm':'TRUST-DOE','decision':signature_select(candidates,[0.0,0.0],1.0,.90),'baseline':signature_ablation(candidates,[0.0,0.0],1.0,.90),'sensitivity':signature_sensitivity(candidates,[0.0,0.0],1.0,.90,.03),'objective':'minimize predicted loss inside a safety-qualified trust region','counterfactual':'trust-region ablation','evidence_artifact':'artifacts/fortune50_capability_benchmark.json','autonomous_execution':False})
@@ -61,6 +65,13 @@ class Handler(SimpleHTTPRequestHandler):
                 return self._json(SERVICE.create_campaign(b.get('name','New process campaign'),b.get('evidence_class','SYNTHETIC_VALIDATION'),b.get('initial_design','LATIN_HYPERCUBE'),int(b.get('runs',14)),int(b.get('seed',2026))),201)
             if p=='/api/design/generate':
                 return self._json(SERVICE.generate_design(b.get('family','LATIN_HYPERCUBE'),int(b.get('runs',24)),int(b.get('seed',2026))))
+            if p=='/api/copilot/chat':
+                message=str(b.get('message','')).strip()
+                if len(message)<3: return self._json({'error':'message must contain at least 3 characters'},422)
+                return self._json(build_copilot_response(message,{
+                    'evidence':'NIST reference data, GP/challenger comparison, SAFE-TRUST, and qualification gates',
+                    'mode':'engineer-review-only',
+                }))
             if p.startswith('/api/campaign/') and p.endswith('/propose'):
                 cid=p.split('/')[3]; return self._json(SERVICE.propose_shadow_trial(cid,int(b.get('seed',2026))))
             if p.startswith('/api/campaign/') and p.endswith('/observe'):

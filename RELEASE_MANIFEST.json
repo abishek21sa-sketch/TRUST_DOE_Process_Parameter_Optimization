@@ -14,35 +14,35 @@
   "evidence_inventory": [
     {
       "path": "artifacts/tenx_validation.json",
-      "sha256": "089346869929996e869056b58c4ec2c57482ba846f61d7991ad7285906023fb3"
+      "sha256": "84e02b0efb5339bd539a0690d793274d3d3dbe8175fe1e538771b1f02db02e7d"
     },
     {
       "path": "artifacts/tenx_stress.json",
-      "sha256": "52ab4492348a01bbad5eccf233235293af227dce10f9656d94fb95fc4da8748c"
+      "sha256": "e4663778cac8373cd2ecb72b50c09d0fb7a6b68c093166e122829782e01fe8e0"
     },
     {
-      "path": "artifacts/airlines15x_validation.json",
+      "path": "artifacts/empirical_validation.json",
       "sha256": "b0e438072abcedd761fd2cb4ff43ca506d489b95530ec21ecbaf62e625bd8eb9"
     },
     {
       "path": "artifacts/final_depth_validation.json",
-      "sha256": "436e04c489d7d8b9c24e8f9fbe5153b66a360c315a9901eafeef0bad73820b36"
+      "sha256": "d4877d9013e1c914fbda163ffccac9d5422c28af45f722873af4eec0a8ca1f5c"
     },
     {
       "path": "artifacts/intelligence_validation.json",
-      "sha256": "60a8100248764815d59edb53beb16ae0d26c6ff816898a1a426188514ff612ef"
+      "sha256": "dc775d662697bb5ee214d7e7bda57cdfe1563b2f44d2ed4bcd03d95ad759b684"
     },
     {
       "path": "artifacts/ui_identity_validation.json",
-      "sha256": "450d11f6a42d8db8f48f0b891836b8ca5e196ca83246d89c3ea645085b40e91c"
+      "sha256": "a6bb40fced0ed654119a6fda12c632f88bcc57abd28e94648b8bd0f90232a5f7"
     },
     {
       "path": "artifacts/frontend_diversity.json",
-      "sha256": "700d77fc065fd1fbae0aeb2cf237dcf38f13485937f4b35a21713373b4440dac"
+      "sha256": "0c545f24a43a027935d96eb793d1ec6c7b295ce9c71919e6eb349112511aab6c"
     },
     {
       "path": "artifacts/portfolio_validation.json",
-      "sha256": "bf32dbe356489096df9e118b7fc1a236ecd7226b6db5b5bbd9d16203258614ed"
+      "sha256": "77cd42c947d456a55c68a0fbaf2b8c768e4d52d5ee0659a5e794e0c711ecaad9"
     },
     {
       "path": "artifacts/governance_standard_validation.json",
@@ -70,7 +70,7 @@
     },
     {
       "path": "scripts/start_platform.py",
-      "sha256": "315121ad211872752c6bdbdc31f0a531d7159a2b1ebbe9d4a214232c591b0c5a"
+      "sha256": "d07b13a64a9748e643e82b2145ccb0f8066d43b8fa4735cbfa300e3deb80d78b"
     }
   ],
   "claim_boundary": "Portfolio-grade analytical validation. External/domain validation and native dependency acceptance remain required where explicitly marked; autonomous operational execution is disabled.",

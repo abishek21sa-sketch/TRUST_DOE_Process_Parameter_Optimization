@@ -44,8 +44,8 @@ src/trustdoe_safe_experiment_lab.egg-info/dependency_links.txt
 src/trustdoe_safe_experiment_lab.egg-info/entry_points.txt
 src/trustdoe_safe_experiment_lab.egg-info/requires.txt
 src/trustdoe_safe_experiment_lab.egg-info/top_level.txt
-tests/test_airlines15x_empirical.py
 tests/test_data_and_benchmark.py
+tests/test_empirical_evidence.py
 tests/test_intelligence_lifecycle.py
 tests/test_math.py
 tests/test_model_readiness_drift.py
@@ -59,6 +59,7 @@ tests/test_phasee_foundation.py
 tests/test_portfolio_validation.py
 tests/test_process_science.py
 tests/test_project_campaign.py
+tests/test_public_model_comparison.py
 tests/test_real_data_backbone.py
 tests/test_release_assurance_workflow.py
 tests/test_release_governance.py
