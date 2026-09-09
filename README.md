@@ -1,10 +1,8 @@
-## AIRLINES-1.5× DEPTH CANDIDATE
+# Trust DOE
 
-Current release `TRUST_DOE_FORTUNE50_AIRLINES15X_RC4` adds a live empirical/historical analysis layer, 26+ substantive workspaces, project-native domain diagnostics, external-source refresh/provenance, and AI decisions grounded in explicit evidence mode. See `docs/AIRLINES_15X_RELEASE.md`.
+## Production readiness
 
-# Fortune-50 TENX analytical release
-
-**Internal portfolio target:** Math 10/10 · UI 10/10 · AI 10/10, subject to the evidence boundaries below.
+Trust DOE includes a live empirical and historical analysis layer, project-native domain diagnostics, external-source provenance, and AI decisions grounded in explicit evidence. See `docs/ENGINEERING_RELEASE.md`.
 
 - Repository-authored algorithm: **SAFE-TRUST-v1**
 - Unique predictive-learning family: **Gaussian-process surrogate learning**
@@ -27,6 +25,14 @@ The first command validates prediction → decision → counterfactual → OR es
 ---
 
 # TRUST-DOE — Autonomous Process Parameter Optimization
+
+## Deployment
+
+Deploy the repository root to Vercel using `vercel.json`; it serves the real
+`workbench/` experiment lab as a static frontend. Deploy the same repository
+as a Render Blueprint, where `scripts/start_platform.py` binds to `$PORT` and
+exposes `/api/health`. The workbench routes all `/api/*` calls to the Render
+service through a configurable browser bridge; machine write remains blocked.
 
 **Phase D v0.95.0 — Process Development Platform**
 

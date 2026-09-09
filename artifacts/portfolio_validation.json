@@ -15,7 +15,7 @@
     "state": "SHADOW_TRIAL_READY"
   },
   "race_budget": 4,
-  "release": "TRUST-DOE_PORTFOLIO_RC1",
+  "release": "TRUST-DOE_PORTFOLIO_RELEASE",
   "robust_recipe": {
     "expected_objective": 0.03085464957194271,
     "feasibility_probability": 1.0,
