@@ -2,7 +2,7 @@ from __future__ import annotations
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import urlparse
-import argparse, json, os, uuid
+import argparse, json, os, traceback, uuid
 
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE_ROOT=ROOT/'src'
@@ -86,6 +86,7 @@ class Handler(SimpleHTTPRequestHandler):
         except (ValueError,RuntimeError,TypeError) as e:
             return self._json({'error':str(e)},400)
         except Exception as e:
+            traceback.print_exc()
             return self._json({'error':f'internal error: {type(e).__name__}: {e}'},500)
     def log_message(self,fmt,*args): print('[TRUST-DOE]',fmt%args)
 

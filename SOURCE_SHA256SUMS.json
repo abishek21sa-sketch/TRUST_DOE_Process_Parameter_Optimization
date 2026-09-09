@@ -1,6 +1,6 @@
 {
   "algorithm": "sha256",
-  "file_count": 192,
+  "file_count": 191,
   "files": {
     ".env.example": "9295346784073b1ee5c62347f37788e26655b4bc08ceb8939b5edaab002f0bc6",
     ".github/workflows/ci.yml": "45346a573d922fc14133e49ae34f321f2399b5608835bd9aa19800ee4cd68806",
@@ -159,7 +159,6 @@
     "src/trustdoe/signature_algorithm.py": "c7e27f4647246dbb3d6d3cb8207049ad20362452381898cfadde7b5c141be44a",
     "src/trustdoe/surrogate.py": "c6ea29f7fd30a43203ce508d7333d23b866640f7e202f3425ad728fc83cf4bd4",
     "src/trustdoe/workflow.py": "86ca70dbef8e9937d026cb18e10d51274eacf300e47df6f77de11b1caf8f4ea4",
-    "TENX_CERTIFICATION.json": "030118ce188036692d25cc829c54a919e82a4fb0fa61b00dc9bc0b0d26e7e9e8",
     "tenx_ui/copilot.js": "6d66aa44c7cb959211a571c43aaeccd085d50000ff32351adae898a21796138b",
     "tenx_ui/index.html": "50d7c144e749d1fd7ca9ae7e1b1fce55ef77ef9f1dfaf2da0a7e553f720321f8",
     "tenx_ui/ui_identity.json": "68b125f393238bcfda970e90beb00bc956ab3012637ee4a8eb6cf0fcb1f9cd99",
