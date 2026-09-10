@@ -16,6 +16,7 @@ from trustdoe.persistence import CampaignRepository
 from trustdoe.workflow import WorkflowService
 from trustdoe.signature_algorithm import select_recipe as signature_select, ablation as signature_ablation, sensitivity as signature_sensitivity
 from intelligence.copilot import build_response as build_copilot_response, status as copilot_status
+from empirical.backbone import run_empirical_reference
 
 WORKBENCH=ROOT/'workbench'
 DEFAULT_DB=Path('/tmp/trustdoe.db') if os.getenv('VERCEL') else ROOT/'runtime'/'trustdoe.db'
@@ -52,6 +53,10 @@ class Handler(SimpleHTTPRequestHandler):
             candidates=[{'recipe':[0.0,0.0],'objective':0.4,'safety':.95,'information':.05},{'recipe':[2.0,2.0],'objective':.1,'safety':.96,'information':.2}]
             return self._json({'status':'HUMAN_GATED_REFERENCE','signature_algorithm':'TRUST-DOE','decision':signature_select(candidates,[0.0,0.0],1.0,.90),'baseline':signature_ablation(candidates,[0.0,0.0],1.0,.90),'sensitivity':signature_sensitivity(candidates,[0.0,0.0],1.0,.90,.03),'objective':'minimize predicted loss inside a safety-qualified trust region','counterfactual':'trust-region ablation','evidence_artifact':'artifacts/fortune50_capability_benchmark.json','autonomous_execution':False})
         if p=='/api/report': return self._json(json.loads((ROOT/'artifacts'/'phaseD_report.json').read_text()))
+        if p=='/api/empirical':
+            try: return self._json(run_empirical_reference())
+            except Exception as e:
+                traceback.print_exc(); return self._json({'error':f'internal error: {type(e).__name__}: {e}'},500)
         if p=='/api/campaigns': return self._json(REPO.list_campaigns())
         if p.startswith('/api/campaign/'):
             cid=p.rsplit('/',1)[-1]; d=REPO.campaign_detail(cid)
