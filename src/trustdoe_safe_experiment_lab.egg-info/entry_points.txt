@@ -1,2 +1,0 @@
-[console_scripts]
-trustdoe-demo = trustdoe.cli:main

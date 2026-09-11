@@ -5,3 +5,4 @@ __pycache__/
 .pytest_tmp/
 .env
 artifacts/*.tmp
+*.egg-info/
