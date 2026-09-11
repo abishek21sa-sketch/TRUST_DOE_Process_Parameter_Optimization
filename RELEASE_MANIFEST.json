@@ -1,36 +1,35 @@
 {
-  "project": "TRUST-DOE — Process Parameter Optimization",
-  "release_stage": "PORTFOLIO_PUBLIC_DATA_RELEASE_CANDIDATE",
-  "platform": "Windows-first",
-  "workspaces": 32,
-  "original_algorithm": "SAFE-TRUST-v1",
-  "predictive_ml_family": "Gaussian-process surrogate learning",
-  "decision_campaign": "Sequential Experiment Campaign",
-  "campaign_identity": "safe-recipe dispersion + information frontier",
-  "data_mode": "published_external_snapshot",
-  "empirical_promotion": "EXTERNAL_EVIDENCE_ACTIVE",
-  "human_authority": "PROCESS_DEVELOPMENT_ENGINEER",
+  "agent_decision_policy": "posterior-driven experiment selection and qualification",
+  "agent_endpoint": "/api/agent/run",
+  "ai_agent": "Process Development Scientist",
   "autonomous_execution": false,
+  "campaign_identity": "safe-recipe dispersion + information frontier",
+  "claim_boundary": "Portfolio-grade analytical validation. External/domain validation and native dependency acceptance remain required where explicitly marked; autonomous operational execution is disabled.",
+  "claim_ledger": "data/provenance/CLAIM_LEDGER.md",
+  "data_backbone": "structured public data contracts + provenance + claim ledger + project-specific empirical case",
+  "data_mode": "published_external_snapshot",
+  "decision_campaign": "Sequential Experiment Campaign",
+  "empirical_promotion": "EXTERNAL_EVIDENCE_ACTIVE",
   "evidence_inventory": [
     {
       "path": "artifacts/tenx_validation.json",
-      "sha256": "84e02b0efb5339bd539a0690d793274d3d3dbe8175fe1e538771b1f02db02e7d"
+      "sha256": "089346869929996e869056b58c4ec2c57482ba846f61d7991ad7285906023fb3"
     },
     {
       "path": "artifacts/tenx_stress.json",
-      "sha256": "e4663778cac8373cd2ecb72b50c09d0fb7a6b68c093166e122829782e01fe8e0"
+      "sha256": "52ab4492348a01bbad5eccf233235293af227dce10f9656d94fb95fc4da8748c"
     },
     {
       "path": "artifacts/empirical_validation.json",
-      "sha256": "b0e438072abcedd761fd2cb4ff43ca506d489b95530ec21ecbaf62e625bd8eb9"
+      "sha256": "c314083eebbeb02f7955dc49ecb273ff5a48d1511e75155708cabd824cf53c69"
     },
     {
       "path": "artifacts/final_depth_validation.json",
-      "sha256": "d4877d9013e1c914fbda163ffccac9d5422c28af45f722873af4eec0a8ca1f5c"
+      "sha256": "436e04c489d7d8b9c24e8f9fbe5153b66a360c315a9901eafeef0bad73820b36"
     },
     {
       "path": "artifacts/intelligence_validation.json",
-      "sha256": "dc775d662697bb5ee214d7e7bda57cdfe1563b2f44d2ed4bcd03d95ad759b684"
+      "sha256": "60a8100248764815d59edb53beb16ae0d26c6ff816898a1a426188514ff612ef"
     },
     {
       "path": "artifacts/ui_identity_validation.json",
@@ -38,11 +37,11 @@
     },
     {
       "path": "artifacts/frontend_diversity.json",
-      "sha256": "0c545f24a43a027935d96eb793d1ec6c7b295ce9c71919e6eb349112511aab6c"
+      "sha256": "700d77fc065fd1fbae0aeb2cf237dcf38f13485937f4b35a21713373b4440dac"
     },
     {
       "path": "artifacts/portfolio_validation.json",
-      "sha256": "77cd42c947d456a55c68a0fbaf2b8c768e4d52d5ee0659a5e794e0c711ecaad9"
+      "sha256": "841e90098b7b1dee69945b49ae828b011bf4cec5e837f19738d6145fe882e596"
     },
     {
       "path": "artifacts/governance_standard_validation.json",
@@ -70,18 +69,19 @@
     },
     {
       "path": "scripts/start_platform.py",
-      "sha256": "d07b13a64a9748e643e82b2145ccb0f8066d43b8fa4735cbfa300e3deb80d78b"
+      "sha256": "9c74f6e1593f7fbacd3bda86bbaf9ca9279f7e7211a01eef69bea63389ef5a97"
     }
   ],
-  "claim_boundary": "Portfolio-grade analytical validation. External/domain validation and native dependency acceptance remain required where explicitly marked; autonomous operational execution is disabled.",
-  "product_ui_identity": "process-development laboratory notebook / response surface",
-  "ai_agent": "Process Development Scientist",
-  "agent_decision_policy": "posterior-driven experiment selection and qualification",
-  "ml_lifecycle_endpoint": "/api/ml/lifecycle",
-  "agent_endpoint": "/api/agent/run",
   "frontend_similarity_method": "5-token Jaccard after removing embedded workspace contract payload",
-  "max_pairwise_frontend_similarity": 0.1321,
   "frontend_similarity_threshold": 0.2,
-  "data_backbone": "structured public data contracts + provenance + claim ledger + project-specific empirical case",
-  "claim_ledger": "data/provenance/CLAIM_LEDGER.md"
+  "human_authority": "PROCESS_DEVELOPMENT_ENGINEER",
+  "max_pairwise_frontend_similarity": 0.1321,
+  "ml_lifecycle_endpoint": "/api/ml/lifecycle",
+  "original_algorithm": "SAFE-TRUST-v1",
+  "platform": "Windows-first",
+  "predictive_ml_family": "Gaussian-process surrogate learning",
+  "product_ui_identity": "process-development laboratory notebook / response surface",
+  "project": "TRUST-DOE \u2014 Process Parameter Optimization",
+  "release_stage": "PORTFOLIO_PUBLIC_DATA_RELEASE_CANDIDATE",
+  "workspaces": 32
 }

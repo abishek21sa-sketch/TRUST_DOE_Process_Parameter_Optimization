@@ -44,6 +44,7 @@ src/trustdoe_safe_experiment_lab.egg-info/dependency_links.txt
 src/trustdoe_safe_experiment_lab.egg-info/entry_points.txt
 src/trustdoe_safe_experiment_lab.egg-info/requires.txt
 src/trustdoe_safe_experiment_lab.egg-info/top_level.txt
+tests/test_copilot_runtime.py
 tests/test_data_and_benchmark.py
 tests/test_empirical_evidence.py
 tests/test_intelligence_lifecycle.py
